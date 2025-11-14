@@ -2,33 +2,77 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <application
-        android:name=".MyApplication"
+        android:name="com.medhaverse.demo.MedhaVerseApp"
         android:allowBackup="true"
         android:largeHeap="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Startup_hackathon20">
+        android:theme="@style/Theme.MedhaVerse">
+
+        <!-- Splash Activity - Launcher -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.medhaverse.demo.ui.splash.SplashActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Startup_hackathon20">
+            android:theme="@style/Theme.MedhaVerse.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.auth.LoginActivity"
+            android:theme="@style/Theme.MedhaVerse"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Role Selection Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.auth.RoleSelectionActivity"
+            android:theme="@style/Theme.MedhaVerse" />
+
+        <!-- Onboarding Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.onboarding.OnboardingActivity"
+            android:theme="@style/Theme.MedhaVerse" />
+
+        <!-- Scanner Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.scanner.ScannerActivity"
+            android:theme="@style/Theme.MedhaVerse"
+            android:screenOrientation="portrait" />
+
+        <!-- Result Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.result.ResultActivity"
+            android:theme="@style/Theme.MedhaVerse" />
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name="com.medhaverse.demo.ui.dashboard.DashboardActivity"
+            android:theme="@style/Theme.MedhaVerse" />
+
+        <!-- Main Activity with Navigation -->
+        <activity
+            android:name="com.medhaverse.demo.ui.main.MainActivity"
+            android:theme="@style/Theme.MedhaVerse" />
+
     </application>
 
 </manifest>

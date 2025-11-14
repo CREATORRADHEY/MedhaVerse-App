@@ -1,3 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">startup_hackathon2.0</string>
+    <string name="app_name">MedhaVerse</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_title">Welcome to MedhaVerse</string>
+    <string name="welcome_subtitle">AI-Powered Waste Intelligence Platform</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_phone">Enter 10-digit mobile number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="demo_otp">Demo OTP: 123456</string>
+    <string name="otp_sent">OTP sent to +91 %s\nDemo OTP: 123456</string>
+    <string name="login_success">Login successful!</string>
+    <string name="invalid_otp">Invalid OTP. Try 123456</string>
+    <string name="terms_policy">By continuing, you agree to MedhaVerse\'s Terms of Service and Privacy Policy</string>
+
+    <!-- Role Selection -->
+    <string name="select_role">Select Your Role</string>
+    <string name="role_subtitle">Choose how you want to contribute to the circular economy</string>
+    <string name="role_citizen">👤 Citizen</string>
+    <string name="role_citizen_desc">Scan waste, earn credits, and track your environmental impact</string>
+    <string name="role_collector">🚛 Waste Collector</string>
+    <string name="role_collector_desc">Manage routes, verify pickups, and optimize collection efficiency</string>
+    <string name="role_recycler">♻️ Recycler</string>
+    <string name="role_recycler_desc">Receive segregated waste and update processing status</string>
+    <string name="role_institution">🏢 Institution</string>
+    <string name="role_institution_desc">Track waste at colleges, malls, hostels, and manage compliance</string>
+    <string name="continue_btn">Continue</string>
+    <string name="select_role_prompt">Please select a role</string>
+    <string name="role_selected">Role selected: %s</string>
+
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logout">Logout</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <!-- Validation -->
+    <string name="error_phone_empty">Enter phone number</string>
+    <string name="error_phone_invalid">Enter valid 10-digit phone number</string>
+    <string name="error_otp_empty">Enter OTP</string>
+    <string name="error_otp_invalid">Enter valid 6-digit OTP</string>
 </resources>

@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Startup_hackathon20" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Base Theme -->
+    <style name="Base.Theme.MedhaVerse" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Brand Colors -->
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorPrimaryVariant">@color/md_theme_primary_dark</item>
+        <item name="colorOnPrimary">@color/md_theme_on_primary</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorSecondaryVariant">@color/md_theme_secondary_dark</item>
+        <item name="colorOnSecondary">@color/md_theme_on_secondary</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnBackground">@color/md_theme_on_background</item>
+        <item name="colorOnSurface">@color/md_theme_on_surface</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/md_theme_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Material Components -->
+        <item name="materialButtonStyle">@style/Widget.MedhaVerse.Button</item>
+        <item name="textInputStyle">@style/Widget.MedhaVerse.TextInputLayout</item>
+        <item name="materialCardViewStyle">@style/Widget.MedhaVerse.CardView</item>
+    </style>
+
+    <style name="Theme.MedhaVerse" parent="Base.Theme.MedhaVerse" />
+
+    <!-- Button Styles -->
+    <style name="Widget.MedhaVerse.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="Widget.MedhaVerse.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- TextInputLayout Styles -->
+    <style name="Widget.MedhaVerse.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">3dp</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="Widget.MedhaVerse.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.MedhaVerse.Splash" parent="Theme.MedhaVerse">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
 </resources>
